@@ -1,18 +1,21 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="./script/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+
     <title>Yanki</title>
 </head>
+
 <body>
     <header class="header">
 
@@ -70,27 +73,30 @@
     </header>
     <div class="container">
         <section class="section2">
-            
+
             <h2>Категории</h2>
-            <div class="swiper">
-                <div class="cards">
-                    <div class="card card1"><p>Куртки</p></div>
-                    <div class="card card2"><p>Пальто</p></div>
-                    <div class="card card3"><p>Шубы</p></div>
-                    <div class="card card4"><p>Парки</p></div>
-                    <div class="card card4"><p>Парки</p></div> 
-                    <div class="card card4"><p>Парки</p></div> 
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card1"><p>Куртки</p></div>
+                  <div class="swiper-slide card2"><p>Пальто</p></div>
+                  <div class="swiper-slide card3"><p>Шубы</p></div>
+                  <div class="swiper-slide card4"><p>Парки</p></div>
+                  <div class="swiper-slide card1"><p>Куртки</p></div>
+                  <div class="swiper-slide card2"><p>Пальто</p></div>
+                  <div class="swiper-slide card3"><p>Шубы</p></div>
+                  <div class="swiper-slide card4"><p>Парки</p></div>
                 </div>
-
-
-            </div>
+                <div class="swiper-button-next xuy1"></div>
+                <div class="swiper-button-prev xuy2"></div>
+              </div>
         </section>
         <section class="section3">
-            <h2>Узнайте  первым о новинках</h2>
+            <h2>Узнайте первым о новинках</h2>
             <form action="" class="form">
                 <input type="email" placeholder="Ваш e-mail*" class="email">
                 <input type="submit" value="ПОДПИСАТЬСЯ" class="submit">
-                <p>Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+                <p>Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с
+                    условиями конфиденциальности.
                 </p>
             </form>
         </section>
@@ -127,6 +133,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
+    
 </body>
 </html>
