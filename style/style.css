@@ -233,7 +233,7 @@ input {
     transform: translateX(-150%);
     transition:.3s ease;
     overflow: auto;
-    z-index: 20;
+    z-index: 999;
 }
 .menu-full h1 {
     text-align: center;
