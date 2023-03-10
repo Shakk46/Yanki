@@ -23,7 +23,7 @@
     .menu-full {
         width: 100%;
         justify-content: center;
-        z-index: 1;
+        z-index: 999;
     }
     .menu-full ul{
         text-align: center;
