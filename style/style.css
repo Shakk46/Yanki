@@ -42,6 +42,9 @@ input {
 .title {
     font-size: 40px;
 }
+.menu{
+    cursor: pointer;
+}
 .main-text {
     margin-top: 330px;
     display: flex;
@@ -64,7 +67,7 @@ input {
 }
 .section2 {
     margin: 100px 0;
-    
+    overflow: hidden;
 }
 .section2 h2{
     color: black;
@@ -72,17 +75,22 @@ input {
     font-size: 36px;
 }
 .swiper {
+    max-width: 1140px;
+    position: relative;
+    
+}
+.cards {
     display: flex;
     gap:15px;
-
+    transition: 300ms;
 }
 .card {
     width: 274px;
     height: 450px;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-shrink: 0;
 }
 .card p {
     height: 40px;
@@ -102,6 +110,24 @@ input {
 }
 .card4 {
     background: url('../img/card4.jpg');
+}
+.swipe {
+    width: 40px;
+    height: 40px;
+    background: rgba(224, 190, 162, 1);
+    display: grid;
+    place-items: center;
+    position:absolute;
+    border: none;
+    cursor: pointer;
+}
+.swipe-left {
+    top: 45%;
+    left: 10px;
+}
+.swipe-right {
+    top: 45%;
+    right: 10px;
 }
 .section3 {
     max-width: 600px;
@@ -156,5 +182,49 @@ input {
 }
 .block li {
     color: grey;
+    cursor: pointer;
+}
+
+.menu-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(224, 190, 162, 0.75);
+    color: white;
+    width: 25%;
+    height: 100%;
+    padding: 40px;
+    transform: translateX(-150%);
+    transition:.3s ease;
+    overflow: auto;
+}
+.menu-full h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu-full ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.menu-full li {
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu-full span {
+    color: white;
+    background:rgba(224, 190, 162,0);
+}
+.menu-full button {
+    background: rgba(224, 190, 162, 0);
+}
+.close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    border: none;
     cursor: pointer;
 }

@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./script/script.js" defer></script>
     <title>Yanki</title>
 </head>
 <body>
@@ -51,16 +51,42 @@
             <hr>
             <p>СМОТРЕТЬ НАВИНКИ</p>
         </div>
+
+        <div class="menu-full">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="#" target="_blank">Account</a></li>
+                <li><a href="#" target="_blank">Favourites</a></li>
+                <li><a href="#" target="_blank">Shopping cart</a></li>
+                <li><a href="#" target="_blank">Categories</a></li>
+                <li><a href="#" target="_blank">Collections</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+            </ul>
+            <button class="close close2"><span class="material-icons">close</span></button>
+        </div>
     </header>
     <div class="container">
         <section class="section2">
             <h2>Категории</h2>
             <div class="swiper">
-                <div class="card card1"><p>Куртки</p></div>
-                <div class="card card2"><p>Пальто</p></div>
-                <div class="card card3"><p>Шубы</p></div>
-                <div class="card card4"><p>Парки</p></div>
-                <!-- <button class="swipe"></button> -->
+                <div class="cards">
+                    <div class="card card1"><p>Куртки</p></div>
+                    <div class="card card2"><p>Пальто</p></div>
+                    <div class="card card3"><p>Шубы</p></div>
+                    <div class="card card4"><p>Парки</p></div>
+                    <div class="card card4"><p>Парки</p></div> 
+                    <div class="card card4"><p>Парки</p></div> 
+                </div>
+                
+
+                <button class="swipe swipe-left">
+                    <span class="material-icons">arrow_back_ios</span>
+                </button>
+                <button class="swipe swipe-right">
+                    <span class="material-icons">arrow_forward_ios</span>
+                </button>
+
+
             </div>
         </section>
         <section class="section3">
