@@ -90,10 +90,11 @@ input {
     position: relative;
     
 }
-.swiper2 {
+.cards {
     display: flex;
     gap:15px;
     transition: 300ms;
+    transform: translateX(0px);
 }
 .card {
     width: 274px;
@@ -144,6 +145,7 @@ input {
 .swipe-left {
     top: 45%;
     left: 10px;
+    display: none;
 }
 .swipe-right {
     top: 45%;

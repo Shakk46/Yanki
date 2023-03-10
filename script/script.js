@@ -6,42 +6,7 @@ let swipeRight = doc.querySelector('.swipe-right')
 let cards = doc.querySelector('.cards')
 let timesClicked = 0;
 
-if(timesClicked == 0) {
-    swipeLeft.style.display = 'none'
-}
 
-swipeRight.addEventListener('click', () => {
-    timesClicked++
-    cards.style = `transform:translateX(-${timesClicked * 274}px)`
-
-    if(timesClicked == 0) {
-        swipeLeft.style.display = 'none'
-    }else {
-        swipeLeft.style.display = 'grid'
-    }
-    if(timesClicked == 2) {
-        swipeRight.style.display = 'none'
-    }else {
-        swipeRight.style.display = 'grid'
-    }
-})
-swipeLeft.addEventListener('click', () => {
-    timesClicked--
-    cards.style = `transform:translateX(-${timesClicked * 274}px)`
-    
-
-    if(timesClicked == 0) {
-        swipeLeft.style.display = 'none'
-    }else {
-        swipeLeft.style.display = 'grid'
-    }
-
-    if(timesClicked == 2) {
-        swipeRight.style.display = 'none'
-    }else {
-        swipeRight.style.display = 'grid'
-    }
-})
 
 let menu = doc.querySelector('.menu')
 let span = menu.firstElementChild

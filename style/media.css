@@ -20,6 +20,14 @@
     .block{
         padding: 0 0 0 30%;
     }
+    .menu-full {
+        width: 100%;
+        justify-content: center;
+        z-index: 1;
+    }
+    .menu-full ul{
+        text-align: center;
+    }
 }
 @media(max-width:600px){
     .icons a:nth-child(1){
