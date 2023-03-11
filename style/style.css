@@ -14,6 +14,14 @@ ul {
 select {
     border: none;
     background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    font-size: 20px;
+}
+select:focus {
+    outline: none;
+}
+option {
+    color: black;
 }
 input {
     display: block;
@@ -28,15 +36,21 @@ input {
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position-x: center;
-
+    display: grid;
+    place-content: center;
+    
 }
 .nav {
-    max-width: 1200px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 77px;
     margin: 0 auto;
+    position:fixed;
+    z-index: 2;
+    padding: 0 15px;
+    transition: 300ms;
 }
 .nav1 {
     display: flex;  
@@ -48,6 +62,9 @@ input {
 .menu{
     cursor: pointer;
 }
+.menu span {
+    font-size: 45px;
+}
 .languages{
     display: flex;
     gap: 10px;
@@ -57,7 +74,6 @@ input {
 }
 
 .main-text {
-    margin-top: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +92,7 @@ input {
 .material-icons {
     font-size: 25px;
 }
+
 .section2 {
     margin: 100px 0;
     overflow: hidden;

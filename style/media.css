@@ -30,20 +30,15 @@
     }
 }
 @media(max-width:600px){
-    .icons a:nth-child(1){
-        display: none;
-    }
-    .icons a:nth-child(2){
-        display: none;
+    .icons {
+        display:none;
     }
     .title {
         font-size: 30px;
+        order:0;
     }
-    .languages p:nth-child(2){
-        display: none;
-    }
-    .main-text{
-        margin-top: 200px;
+    .menu span{
+        font-size: 30px;
     }
     .main-text h2 {
         font-size: 37px;

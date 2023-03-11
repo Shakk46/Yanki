@@ -12,7 +12,7 @@ let menu = doc.querySelector('.menu')
 let span = menu.firstElementChild
 let close = doc.querySelector('.close')
 let menuFull = doc.querySelector('.menu-full')
-console.log(menuFull)
+
 menu.addEventListener('click', () => {
     menuFull.style = 'transform:translateX(0)'
 })
@@ -56,3 +56,23 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
   });
+
+
+let header = doc.querySelector('.header')
+let nav = doc.querySelector('.nav')
+let black = doc.querySelectorAll('.black')
+
+document.addEventListener('scroll', () => {
+    let windCoord = window.scrollY
+    if(header.clientHeight - 100 < windCoord) {
+        nav.style = 'background:white;'
+        for(let elem of black) {
+            elem.style = 'color:pink; font-weight:bold;'
+        }
+    }else {
+        for(let elem of black) {
+            elem.style = 'color:white; font-weight:400;'
+        }
+        nav.style = 'background:none;'
+    }
+})
