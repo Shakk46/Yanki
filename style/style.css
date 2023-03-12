@@ -49,7 +49,7 @@ input {
     margin: 0 auto;
     position:fixed;
     z-index: 2;
-    padding: 0 15px;
+    padding: 0 40px;
     transition: 300ms;
 }
 .nav1 {
