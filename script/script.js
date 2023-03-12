@@ -1,12 +1,6 @@
 let doc = document
 
 
-let swipeLeft = doc.querySelector('.swipe-left')
-let swipeRight = doc.querySelector('.swipe-right')
-let cards = doc.querySelector('.cards')
-let timesClicked = 0;
-
-
 
 let menu = doc.querySelector('.menu')
 let span = menu.firstElementChild
@@ -18,7 +12,6 @@ menu.addEventListener('click', () => {
 })
 close.addEventListener('click', () => {
     menuFull.style = 'transform:translateX(-150deg)'
-    
 })
 
 
@@ -60,19 +53,42 @@ var swiper = new Swiper(".mySwiper", {
 
 let header = doc.querySelector('.header')
 let nav = doc.querySelector('.nav')
-let black = doc.querySelectorAll('.black')
-
+let changeColor = doc.querySelectorAll('.change')
+let windCoord
 document.addEventListener('scroll', () => {
-    let windCoord = window.scrollY
+    windCoord = window.scrollY
     if(header.clientHeight - 100 < windCoord) {
         nav.style = 'background:white;'
-        for(let elem of black) {
+        for(let elem of changeColor) {
             elem.style = 'color:pink; font-weight:bold;'
         }
     }else {
-        for(let elem of black) {
+        for(let elem of changeColor) {
             elem.style = 'color:white; font-weight:400;'
         }
         nav.style = 'background:none;'
     }
+})
+
+
+let headerLink = doc.querySelector('#headerLink')
+let sliderLink = doc.querySelector('#sliderLink')
+let formLink = doc.querySelector('#formLink')
+
+let slider = doc.querySelector('#slider')
+let form = doc.querySelector('#form')
+
+
+// Это можно было сделать через css
+headerLink.addEventListener('click',(event) => {
+    event.preventDefault()
+    window.scrollTo({top: 0, behavior: 'smooth'})   
+})
+sliderLink.addEventListener('click',(event) => {
+    event.preventDefault()
+    window.scrollTo({top: slider.offsetTop - 77, behavior: 'smooth'})   
+})
+formLink.addEventListener('click',(event) => {
+    event.preventDefault()
+    window.scrollTo({top: form.offsetTop - 77, behavior: 'smooth'})   
 })
