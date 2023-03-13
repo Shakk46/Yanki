@@ -64,9 +64,7 @@ document.addEventListener('scroll', () => {
             elem.style = 'color:pink; font-weight:bold;'
         }
         ad.style.transform = 'translateX(0%)'
-        setTimeout(function closeAd () {
-            ad.style.display = 'none'
-        }, 3000)
+        setTimeout(closeAd, 3000)
     }else {
         for(let elem of changeColor) {
             elem.style = 'color:white; font-weight:400;'
