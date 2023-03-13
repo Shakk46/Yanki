@@ -54,7 +54,8 @@ var swiper = new Swiper(".mySwiper", {
 let header = doc.querySelector('.header')
 let nav = doc.querySelector('.nav')
 let changeColor = doc.querySelectorAll('.change')
-let windCoord
+let windCoord;
+let ad = doc.querySelector('.ad')
 document.addEventListener('scroll', () => {
     windCoord = window.scrollY
     if(header.clientHeight - 100 < windCoord) {
@@ -62,6 +63,10 @@ document.addEventListener('scroll', () => {
         for(let elem of changeColor) {
             elem.style = 'color:pink; font-weight:bold;'
         }
+        ad.style.transform = 'translateX(0%)'
+        setTimeout(function closeAd () {
+            ad.style.display = 'none'
+        }, 3000)
     }else {
         for(let elem of changeColor) {
             elem.style = 'color:white; font-weight:400;'
@@ -92,3 +97,14 @@ formLink.addEventListener('click',(event) => {
     event.preventDefault()
     window.scrollTo({top: form.offsetTop - 77, behavior: 'smooth'})   
 })
+
+
+let adClose = doc.querySelector('.ad__close')
+function closeAd () {
+    ad.style.transform = 'translateX(150%)'
+    setTimeout(() => {
+        ad.style.display = 'none'
+    }, 301)
+    
+}
+adClose.addEventListener('click', closeAd)
